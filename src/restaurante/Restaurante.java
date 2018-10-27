@@ -1,9 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package restaurante;
+
+import java.util.Scanner;
 
 /**
  *
@@ -17,14 +14,38 @@ public class Restaurante {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        Facade facade;
+        Facade facade = new Facade();
         int i = 0;
+        Scanner scanner = new Scanner(System.in);
         
-        while(i == 0){
-            System.out.println("Novo cliente?");
-            System.out.println("Pagar conta?");
-            System.out.println("P");
-        
+        System.out.println("Abrindo conta! ");
+        facade.abrirConta();
+                
+        while(i != 4){
+                    
+            System.out.println("1 para pedir um Xis de 15,00 reais! ");
+            System.out.println("2 para pedir uma pizza de 35, reais! ");
+            System.out.println("3 para pedir uma alaminuta de 13,00 reais! ");
+            System.out.println("4 para pagar a conta! ");
+            i = scanner.nextInt();
+                    
+            if(i == 1){
+                facade.pedirXis();
+            }else{
+                if(i == 2){
+                    facade.pedirPizza();
+                }else{
+                    if(i == 3){
+                        facade.pedirAlaminuta();
+                    }else{
+                        if(i == 4){
+                            facade.pagarConta();
+                            System.out.println("Saia já da mesa!!! ");
+                        }
+                    }
+                }
+            }
+        }
     }
     
 }
