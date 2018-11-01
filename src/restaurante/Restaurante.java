@@ -14,7 +14,7 @@ public class Restaurante {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        Facade facade = new Facade();
+        GarconFacade facade = new GarconFacade();
         int i = 0;
         Scanner scanner = new Scanner(System.in);
         
@@ -25,7 +25,7 @@ public class Restaurante {
                     
             System.out.println("1 para pedir um Xis de 15,00 reais! ");
             System.out.println("2 para pedir uma pizza de 35, reais! ");
-            System.out.println("3 para pedir uma alaminuta de 13,00 reais! ");
+            System.out.println("3 para pedir uma alaminuta de 17,00 reais! ");
             System.out.println("4 para pagar a conta! ");
             i = scanner.nextInt();
                     

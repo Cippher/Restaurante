@@ -4,12 +4,12 @@ package restaurante;
  *
  * @author 0196611
  */
-public class Facade {
+public class GarconFacade {
     
     Cozinha cozinha;
     Caixa caixa;
     
-    Facade(){
+    GarconFacade(){
     cozinha = new Cozinha();
     caixa = new Caixa(); 
     }
