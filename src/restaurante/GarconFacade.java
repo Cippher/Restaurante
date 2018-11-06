@@ -37,10 +37,5 @@ public class GarconFacade {
     public void abrirConta(){
         System.out.println("");
         caixa.abrirConta();
-    }
-    
-    public void calculaConta(){
-        //implementar
-    }
-    
+    }    
 }
