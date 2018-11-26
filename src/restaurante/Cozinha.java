@@ -2,7 +2,7 @@ package restaurante;
 
 /**
  *
- * @author 0196611
+ * @author 0196611 Vinícius Daniel N. Barros
  */
 public class Cozinha {
     
